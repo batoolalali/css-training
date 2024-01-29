@@ -7,7 +7,7 @@
 - [CSS Flexbox](https://batoolalali.github.io/css-training/css-flexbox)
 - [CSS Float](https://batoolalali.github.io/css-training/css-float)
 - [CSS Links](https://batoolalali.github.io/css-training/css-links)
-- [CSS Lists](https://batoolalali.github.io/css-training/css-list)
+- [CSS Lists](https://batoolalali.github.io/css-training/css-lists)
 - [CSS position](https://batoolalali.github.io/css-training/css-position)
 - [CSS Typography](https://batoolalali.github.io/css-training/typography)
 
