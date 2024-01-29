@@ -1,0 +1,38 @@
+/* https://fonts.google.com/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    padding: 10%; /*don't forget that this padding is based on the font*/
+    font-size: 2rem;
+
+    font-family:  'Roboto', sans-serif;
+}
+
+
+input, button{
+    font: inherit; /*by default form elements doesn't inherit font */
+}
+
+
+
+p{
+    /* text-decoration: overline; */
+    /* text-transform: capitalize;   */
+    text-align: justify; /*left, right*/
+
+    text-indent: 2em; /* best unit here is em: Font size of the parent, in the case of typographical properties like font-size*/
+
+    line-height: 1.5;  /*makes it readable*/
+    /* letter-spacing: 0.1em;  */
+    /* word-spacing: 0.25em; */
+
+    /* font-weight:500; */
+
+    /* font-style: oblique; */
+
+}
+
+
+

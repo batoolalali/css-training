@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.block{
+    width: 30vw;
+    height: 30vw;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+
+}
+
+.left{
+    float: left;
+    margin-right: 1rem;
+}
+
+
+.right{
+    float: right;
+    margin-left: 1rem;
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+section{
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    /* overflow: auto; */   /*this is to solve the height issue of the conainer but the best way to do this is is display:flow-root*/
+
+    /*The element generates a block container box, and lays out its contents using flow layout. It always establishes a new block formatting context for its contents. It provides a better solution to the most use cases of the "clearfix" hack.*/
+    display: flow-root;
+
+}

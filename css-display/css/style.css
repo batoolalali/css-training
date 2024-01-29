@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+/*block elements have 100% of the width (parent)*/
+p{
+    background-color: lightgray;
+    
+}
+
+
+.opposite{
+    display: inline-block;  /*the element won't take the 100% width but will be effected with margin and height and width, and padding won't overlap other elements*/
+    background-color: #333;
+    color: whitesmoke;
+    margin: 20px;  /*this won't be applied for inline element*/
+    height: 100px;  /*this won't be applied for inline element*/
+    padding: 4rem;  /*this will overlap other elemnts for inline*/
+    width: 200px;
+}
+
+/*block elements: stack in top of each other and always create new line, 100% width if there is nothing limitated their width*/
+
+/*inline elements: Do NOT stack in top of each other and always create new line, conten width and padding */
+
+/*inline-block: makes us able to applyy heighgt, padding and margin*/
+
+
+
+ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;   /*this will be applied to the left and right*/
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover, li a:focus{
+    text-decoration: underline;
+}
+

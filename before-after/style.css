@@ -1,0 +1,79 @@
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 85.1%);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.1);
+    margin: 2em auto;
+    max-width: 18.75em;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 1em;
+  }
+  
+
+  .card-body {
+    font-size: 1.1em;
+    letter-spacing: 0.04em;
+  }
+
+  img {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  
+
+  img::before {
+    background-color: hsl(0, 0%, 93.3%);
+    border: 1px dashed hsl(0, 0%, 66.7%);
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    content: " ";
+    position: absolute;
+    width: 100%;
+  }
+
+  img::after {
+    content: attr(alt);
+    font-weight: bold;
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    text-align: center;
+    top: 1px;
+    width: 100%;
+  }
+
+  img[alt] {
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 60%);
+   }
+
+   .test{
+    min-height: 300px;
+   }
+
+
+   .line-after{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0 10%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+
+.line-after::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0.9rem;
+    height: 100%;
+    border-right: 5px solid blue;
+}

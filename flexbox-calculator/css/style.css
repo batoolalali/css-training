@@ -1,0 +1,81 @@
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+button, .result{
+    font: inherit;
+    color: #fcfcfc;
+
+}
+
+main{
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+align-items: center;}
+
+.key{
+    height: 50px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    min-width: 390px;
+    width: 390px;
+    height: 355px;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    background-color: #ef476f;
+    border-radius: 10px;
+    box-shadow: 0 8px #eb184a;
+    padding: 12px;
+}
+
+.cal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 290px;
+}
+
+.row{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.num, .result{
+    box-shadow: 0 4px 1px #142c41;
+    background: #26547c;
+}
+
+.result{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 12px;
+    box-shadow: inset 0 4px 5px #900d2c;
+   
+}
+
+.op{
+    box-shadow: 0 4px 1px #cc8f00;
+    background: #ffd166;
+    color: #7d7d7d;
+}
+
+.equals{
+    box-shadow: 0 4px 1px #048c68;
+    background: #06d6a0;
+    color: #7d7d7d;
+}

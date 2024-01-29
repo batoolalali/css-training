@@ -1,0 +1,97 @@
+*{
+    /*css reset*/
+ /*these three are important to remove extra space*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* to calculate the margin, paading and border in the element size */
+}
+
+
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: rbg(0,0,0) ;
+
+    /*this allow the body to grow with content and in the same time it's the full page*/
+    min-height: 100vh;
+}
+
+
+
+h1{
+    /* border: 2px black solid; */
+    /* padding: 0.5em;    */
+    /* width: 50%; */
+    font-size: 3rem;
+   
+}
+
+/* main{
+    width: 50vw;
+    background-color: skyblue;
+} */
+
+
+p{
+    color:#18260c;
+    /*font-size 16px is default */
+    /* not recommended to use px to font size, it's used for things like border */
+
+    /* font-size:16px  */
+
+
+    
+    /* persantage relative to the parent, the parent */
+    /* width: 70%; */
+
+
+    /* ch --> 40ch == 40 character pree line */
+    /* width: 60ch;  */
+    
+    
+    /* rem is used for font size, don't use font-size to the root element to let browser handel the root size, not the parent but the root*/
+    font-size: 2rem;    
+
+    /* we can use em for padding and margin, em based on the font of the element itself */
+
+    /* 
+    Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.
+    */
+    padding: 0.5em;   
+
+
+}
+
+
+.container{
+    border: 2px dashed red;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.circle{
+    /*aligh herzonally*/
+    margin: 3rem auto;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;  /*or 50px because width and height are 100px*/
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+
+}
+
+.btn{
+    margin: 3rem auto;
+    background-color: gold;
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 9px;  /*or 50px because width and height are 100px*/
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+
+}

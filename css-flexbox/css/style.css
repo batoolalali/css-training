@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+
+  
+  display: flex;
+
+  /* justify-content  horizantal */
+
+
+
+  /*justify-content: flex-end;*/  /*to align elements to left*/
+
+  justify-content: end;
+
+  /* justify-content: space-around; gap with space before and after each element*/
+
+  /*space without the space at the start and the end*/
+  /* justify-content: space-between; */
+
+
+  /*the same space between and at the end and the start*/
+  justify-content: space-evenly;
+
+  /* justify-content: center; */
+
+
+  /*align items vertical*/
+  /* align-items: flex-start;  */  /*top*/
+  /*align-items: end;*/ /*bottom*/
+
+  align-items: center;
+
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+
+
+  /*flex-wrap Controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, */
+  /* flex-wrap: wrap; */
+
+  /*shorthand direction and wrap*/
+  flex-flow: row nowrap;
+
+  align-content: space-around;  /*align the row*/
+  gap: 30px;
+} 
+
+.box {
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 1;
+
+  flex-shrink: 1;
+
+  /* property sets the initial main size of a flex item. */
+  flex-basis: 40%;
+
+/*shorthand    grow shrink basis*/
+  /* flex: 1 1 40% */
+}
+
+
+/**
+when we have elements with flex grow that means to grow when container size changes
+when we hae two, when of them is 1 and the other is 2 this means to give each one the basis then divid the extra space between them when they grow 
+by a ratio 1:2
+
+*/
+
+.box:nth-child(2){
+
+    flex-grow: 2;
+    flex-shrink: 2;
+    order: 1;
+    /* align-self: ; This property accepts the same values as align-items and its value for the specific item.*/
+}
