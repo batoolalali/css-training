@@ -9,7 +9,8 @@
 - [CSS Links](https://batoolalali.github.io/css-training/css-links)
 - [CSS Lists](https://batoolalali.github.io/css-training/css-lists)
 - [CSS position](https://batoolalali.github.io/css-training/css-position)
-- [CSS Typography](https://batoolalali.github.io/css-training/typography)
+- [CSS Typography](https://batoolalali.github.io/css-training/css-typography)
+- [CSS Grid Layout](https://batoolalali.github.io/css-training/css-grid)
 
 
 ## Projects

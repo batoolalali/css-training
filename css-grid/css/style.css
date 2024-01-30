@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-columns: 72px auto 75px;
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd hd "
+  "mn mn mn mn mn mn mn sb sb"
+  "ft ft ft ft ft ft ft ft ft"
+  ;
+  gap: 1rem;
+}
+
+.el{
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+
+.header{
+    /* If typing out both grid-column and grid-row is too much for you, there's yet another shorthand for that. grid-area accepts four values separated by slashes: grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end. */
+
+/* One example of this would be grid-area: 1 / 1 / 3 / 6;. */
+    /* grid-area:1/2/4/6 */
+    grid-area: hd;
+}
+
+.sidebar{
+    grid-area: sb;
+    background-color: blue;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+
+.container{
+    display: grid;
+
+    /* grid-auto-flow: column; */
+
+    /*instead of grid auto we can use a template and determain how many columns I want and the size of each, in fr or px (fr is a special unit for grid)*/
+    /*in fr it uses the whole size and split it
+    */
+
+    /* grid-template-columns: 2fr 1fr  1fr; */
+
+    /* we can use repeat also
+    the next example means to have 4 columns each one with 1fr
+    so in the second row it will have only 2 columns because we have 6 boxes and grids can take empty space
+    */
+    grid-template-columns: repeat(4,1fr);
+
+
+    grid-auto-rows: 200px;
+   
+/* 
+    row-gap: 1em;
+    column-gap: 1em; */
+    gap: 1rem;
+
+    grid-area: mn;
+}
+
+.box {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+
+.box:first-child{
+    background-color: blue;
+    /*start before the first column and end before the 4th column*/
+/*     
+    grid-column-start: 1 ;
+    grid-column-end:4 ;
+
+    grid-row-start: 1;
+        grid-row-end: 3; 
+    */
+
+    /* shorhand: */
+
+    grid-column: 1/4;
+    grid-row: 1/3;
+    /*now the size is 3 columns (1-4) and 2 rows (1-3)*/
+
+
+    display: grid;
+    /* 
+        align-content: center;
+        justify-content: center;
+    */
+
+    /*short hand*/
+    place-content: center center;
+}
+
+
+.box:nth-child(2){
+    background-color: purple;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+.box:nth-child(6){
+    grid-column: 2/5;
+}
+
+
