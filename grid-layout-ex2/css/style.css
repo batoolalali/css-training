@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem;
+
+       width: 500px;
+    height: 400px;
+    margin: 5rem auto;
+
+}
+
+
+.box{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+
+.a{
+    grid-column: 1/5;
+}
+
+.b{
+    grid-area: 2/1/4/3;
+}
+
+
+.c{
+    grid-area: 2/3/3/5;
+}
+
+
