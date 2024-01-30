@@ -18,6 +18,7 @@
 - [Flexbox Calculator Project](https://batoolalali.github.io/css-training/flexbox-calculator-project)
 - [Flexbox Card Collection Project](https://batoolalali.github.io/css-training/flexbox-card-collection-project)
 - [Mini Project](https://batoolalali.github.io/css-training/mini-project)
+- [Grid Layout Example1](https://batoolalali.github.io/css-training/grid-layout-ex1)
 
 
 
