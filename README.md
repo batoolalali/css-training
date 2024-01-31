@@ -11,6 +11,7 @@
 - [CSS position](https://batoolalali.github.io/css-training/css-position)
 - [CSS Typography](https://batoolalali.github.io/css-training/css-typography)
 - [CSS Grid Layout](https://batoolalali.github.io/css-training/css-grid)
+- [CSS Images](https://batoolalali.github.io/css-training/css-images)
 
 
 ## Projects
