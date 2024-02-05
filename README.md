@@ -12,7 +12,7 @@
 - [CSS Typography](https://batoolalali.github.io/css-training/css-typography)
 - [CSS Grid Layout](https://batoolalali.github.io/css-training/css-grid)
 - [CSS Images](https://batoolalali.github.io/css-training/css-images)
-
+- [CSS Media Queries](https://batoolalali.github.io/css-training/css-media-queries)
 
 ## Projects
 - [Flexbox Article Project](https://batoolalali.github.io/css-training/flexbox-article-project)
